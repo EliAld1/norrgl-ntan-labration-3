@@ -114,7 +114,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2rem;
+  margin: 2rem 0;
   padding: 2rem;
   gap: 1.5rem;
 }
@@ -133,6 +133,9 @@ nav a:hover {
   gap: 1.5rem;
   border-radius: 10px;
 }
+.activites h2 {
+  text-align: center;
+}
 
 /*AVSLUTANDESEKTION*/
 .plan-visit {
@@ -140,7 +143,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2rem;
+  margin: 2rem 0;
   padding: 2rem;
   gap: 1.5rem;
 }
@@ -180,11 +183,11 @@ nav a:hover {
 }
 
 .footer-contact p {
-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .footer-links ul {
-  list-style: none
+  list-style: none;
 }
 
 .footer-links a {
@@ -192,3 +195,85 @@ text-decoration: underline;
   text-decoration: underline;
 }
 
+/* REGLER STÖRRE SKÄRMAR*/
+@media (min-width: 768px) {
+  /*HEADER*/
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    margin-left: 15rem;
+  }
+  .nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    margin-right: 15rem;
+  }
+
+  /*HERO*/
+  .hero {
+    position: relative;
+    display: flex;
+    align-items: start;
+    overflow: hidden;
+    width: 100%;
+    min-height: 400px;
+  }
+
+  .hero img {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+  }
+  .hero-content {
+    align-items: start;
+    text-align: left;
+    max-width: 500px;
+    position: relative;
+    z-index: 2;
+    padding: 7rem;
+  }
+  .hero-content h1 {
+    line-height: 1; /*avståndet mellan rubriken i hero-bild*/
+  }
+
+  /*AKTIVITETER*/
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+  }
+  .activites h2 {
+    text-align: center;
+  }
+  .card {
+    flex: 1;
+    gap: 2rem;
+  }
+
+  /*AVSLUTANDESEKTION*/
+  .plan-visit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .plan {
+    text-align: left;
+    max-width: 700px;
+    margin-left: 5rem;
+    padding:2rem;
+  }
+  .plan h2 {
+    line-height: 3rem;
+  }
+  .plan-visit button {
+    white-space: nowrap;
+    margin-right: 5rem;
+  }
+}
