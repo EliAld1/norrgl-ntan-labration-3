@@ -5,3 +5,8 @@ Detta är mitt första projekt jag har skapat som har fokus på struktur och des
 Projektet är byggt med:
 - HTML
 - CSS
+
+## Länkar
+Publicering GitHub Pages: https://eliald1.github.io/norrgl-ntan-labration-3/
+
+Figma-mockup: https://www.figma.com/proto/bCbykbntB1iXMkv04awgGE/Norrgl%C3%A4ntan?node-id=1-2&p=f&t=d4j7LbTeHExoDNDG-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2
